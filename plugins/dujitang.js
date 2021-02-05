@@ -1,6 +1,5 @@
 const Bot = require('../modules/bot');
 const axios = require('axios').default;
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 
 class Plugin extends Bot {
@@ -11,7 +10,7 @@ class Plugin extends Bot {
   }
   run () {
     axios.get(this.API).then(res => {
-      this.sendMarkdown(`> 🌺🐔来碗毒鸡汤\n\n${res.data}`);
+      this.sendMarkdown(`> 🌺🐔卜姐送汤\n\n${res.data}`);
     })
   }
 }
