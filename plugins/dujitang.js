@@ -1,5 +1,7 @@
 const Bot = require('../modules/bot');
 const axios = require('axios').default;
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
 
 class Plugin extends Bot {
   constructor () {
